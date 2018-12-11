@@ -12,29 +12,48 @@ import javax.swing.JOptionPane;
  * @author LAB2-PC
  */
 public class Operaciones {
-    private int n1,n2;
+    double a, b,ct; 
+    String bt="";     
 
     public Operaciones() {
     }
 
     public Operaciones(int n1, int n2) {
-        this.n1 = n1;
-        this.n2 = n2;
+        this.a = n1;
+        this.b = n2;
     }
-    public static void suma(){
-        //int su = n1+n2;
-        JOptionPane.showMessageDialog(null,"La suma es: "+(5+2));
+    
+    public Double suma(){  
+      a= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el primer numero"));         	
+      b= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+      ct= a+b;
+      JOptionPane.showInputDialog("La Suma Es: "+ String.valueOf(ct));               
+        return ct;
     }
-    public static int resta() {
-       int res=8-4;
-        return res;
+    
+    public Double resta(){
+      String bt="";     
+      a= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el primer numero"));         	
+      b= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+      ct= a-b;
+      JOptionPane.showInputDialog("La Resta Es: "+ String.valueOf(ct));               
+      return ct;   
     }
-    public void multiplicacion() {
-        JOptionPane.showMessageDialog(null,"La multiplicacion es: "+(5*2));
-       
+        
+     public Double multiplicacion(){
+      a= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el primer numero"));         	
+      b= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+      ct= a*b;
+      JOptionPane.showInputDialog("La Resta Es: "+ String.valueOf(ct));               
+      return ct;   
     }
-    public int divicion() {
-       int div=10/2;
-        return div;
+        
+     public Double division(){
+      a= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el primer numero"));         	
+      b= Double.parseDouble(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+      ct= a/b;
+      JOptionPane.showInputDialog("La Division Es: "+ String.valueOf(ct));               
+      return ct;   
     }
+     
 }

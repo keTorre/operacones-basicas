@@ -8,7 +8,8 @@ package ec.edu.ister.vista;
 import ec.edu.ister.controlador.Coordinador;
 
 /**
- *
+ *3
+ * 3
  * @author LAB2-PC
  */
 public class Ejecutor {
